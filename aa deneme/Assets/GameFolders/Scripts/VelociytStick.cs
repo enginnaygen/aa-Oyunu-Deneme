@@ -32,7 +32,7 @@ public class VelociytStick : MonoBehaviour
         {
 
             stick.transform.parent = circle.transform;
-            circleRotation.Sayac--;
+            circleRotation.Counter--;
            
         }
         if (collision.gameObject.tag == "Stick")
@@ -42,23 +42,4 @@ public class VelociytStick : MonoBehaviour
         }
 
     }
-
-   /* private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Circle")
-        {
-            stickRb.velocity = new Vector2(0, 0);
-
-        }
-
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Circle")
-        {
-            stickRb.velocity = new Vector2(0, 0);
-        }
-
-    }*/
-
 }
